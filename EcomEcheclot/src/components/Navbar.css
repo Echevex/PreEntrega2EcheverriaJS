@@ -1,0 +1,59 @@
+/* Navbar.css */
+
+.navbar__links li:hover .dropdown {
+  display: block; /* Muestra el dropdown al pasar el mouse */
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f7f7f7;
+  position: relative;
+}
+
+.navbar__links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar__logo img {
+  max-width: 250px; 
+  height: auto;
+}
+.navbar__links li {
+  position: relative;
+}
+
+.navbar__links a {
+  color: rgb(245, 94, 94);
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #f73c3c;
+  list-style: none;
+  padding: 10px 0;
+  margin: 0;
+  border-radius: 5px;
+  display: block;
+  z-index: 10;
+}
+
+.dropdown li {
+  padding: 10px 20px;
+}
+
+.dropdown li a {
+  color: white;
+}
+
+.dropdown li a:hover {
+  background-color: #fd9b9b;
+}
